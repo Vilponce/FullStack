@@ -6,10 +6,10 @@ export default class Start extends React.Component {
     render(){ 
     return (
         <div>
-           <h1>Start browsing</h1>
+           <h1 className="buscador">Start browsing</h1>
         <img src = { flecha }
         className = "flecha" / >
-          <p>Want to build your own Mytinerary?</p>
+          <p className= "Want">Want to build your own Mytinerary?</p>
          </div>)
 }
 }

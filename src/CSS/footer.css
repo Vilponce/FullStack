@@ -1,3 +1,11 @@
 .losLinks {
     display: flex;
+    justify-content: space-around;
+    color: blue;
+}
+
+.casita {
+    width: 50px;
+    opacity: 0.5;
+    margin-bottom: 10px;
 }

@@ -7,7 +7,7 @@ class HeaderApp extends React.Component{
     return (
     <div>
       <img src={logo} className="Logo"/>
-      <p>Find your pecfect trip, designed by insiders who know and love their cities</p>
+      <p className= "find">Find your pecfect trip, designed by insiders who know and love their cities</p>
       </div>)
   }
 }
