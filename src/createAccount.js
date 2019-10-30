@@ -1,4 +1,6 @@
 import React from 'react'
+import logo from './imagenes/MYtineraryLogo.png';
+import casita from "./imagenes/homeIcon.png";
 
 class CreateAcount extends React.Component {
   onSubmit = () => {
@@ -6,11 +8,16 @@ class CreateAcount extends React.Component {
   }
   render() {
     return (
-      <form>
-        <input placeholder="name" type="name" />
-        <input placeholder="email" type="email" />
-        <button onClick={this.onSubmit}>Submit</button>
-      </form>
+      <div>
+        <img src={logo} className="Logo"/>
+
+        <form>
+          <input placeholder="Name" type="name" />
+          <input placeholder="Email" type="email" />
+          <button onClick={this.onSubmit}>Submit</button>
+        </form>
+        <img src = {casita} className = "casita"/>
+      </div>
     )
   }
 }

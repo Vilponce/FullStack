@@ -8,6 +8,8 @@ import CasitaHome from "./componentes/footer"
 import "./CSS/start.css";
 import "./CSS/footer.css";
 
+
+
 function App() {
   return (
     <div className="App">
@@ -20,14 +22,7 @@ function App() {
         {/* <p>
           Find your pecfect trip, designed by insiders who know and love their cities
         </p> */}
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+   
       </header>
     </div>
   );

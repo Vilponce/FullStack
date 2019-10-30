@@ -1,5 +1,7 @@
 import React from 'react'
 import { Route, Link } from 'react-router-dom'
+
+
 const User = ({ match }) => <p>{match.params.id}</p>
 class Users extends React.Component {
   render() {
@@ -19,7 +21,7 @@ class Users extends React.Component {
             <Link to="/users/3">User 3 </Link>
           </li>
         </ul>
-        <Route path="/users/:id" component={User} />
+       
       </div>
     )
   }

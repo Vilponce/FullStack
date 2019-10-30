@@ -4,8 +4,10 @@ import './index.css'
 import { Route, NavLink, BrowserRouter as Router, Switch } from 'react-router-dom'
 import App from './App'
 import Users from './users'
-import createAccount from './createAccount'
+import createAccount from './CreateAccount'
 import Notfound from './notfound'
+import login from "./login"
+import header from "./componentes/header"
 
 const routing = ( 
 <Router>
@@ -15,7 +17,7 @@ const routing = (
                 <NavLink exact activeClassName = "active" to = "/">Home</NavLink> 
             </li> 
             <li>
-                <NavLink activeClassName = "active" to = "/users" >Users</NavLink> 
+                <NavLink activeClassName = "active" to = "/users/:id" >Users</NavLink> 
             </li> 
             <li>
                 <NavLink activeClassName = "active" to = "/createAccount" >createAccount</NavLink> 
@@ -24,9 +26,13 @@ const routing = (
             <hr / >
             <Switch>
                 <Route exact path = "/"component = { App }/> 
-                <Route exact path = "/users"component = { Users }/> 
+                <Route  path = "/users"component = { Users }/> 
                 <Route path = "/createAccount"component = { createAccount }/> 
+                <Route path="/users/:id" component={Users} />
+                <Route path = "/login"component = {login}></Route>
+            
                 <Route component = { Notfound }/> 
+               
             </Switch> 
         </div> 
 </Router>
