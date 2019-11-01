@@ -8,6 +8,8 @@ import createAccount from './CreateAccount'
 import Notfound from './notfound'
 import login from "./login"
 import header from "./componentes/header"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 const routing = ( 
 <Router>
