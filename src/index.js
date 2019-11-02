@@ -4,7 +4,7 @@ import './index.css'
 import { Route, NavLink, BrowserRouter as Router, Switch } from 'react-router-dom'
 import App from './App'
 import Users from './users'
-import createAccount from './CreateAccount'
+import createAccount from './createAccount'
 import Notfound from './notfound'
 import login from "./login"
 import header from "./componentes/header"

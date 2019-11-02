@@ -14,7 +14,7 @@ class CasitaHome extends React.Component {
       
         </div>
         <img src = { casita }
-        className = "casita" / >
+        className = "casita"/>
       </div>)
      
 
