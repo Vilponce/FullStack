@@ -10,7 +10,7 @@ import login from "./login"
 import header from "./componentes/header"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-
+import Ciudades from "./Ciudades";
 const routing = ( 
 <Router>
     <div>
@@ -24,6 +24,10 @@ const routing = (
             <li>
                 <NavLink activeClassName = "active" to = "/createAccount" >createAccount</NavLink> 
             </li > 
+
+            <li >
+                <NavLink exact activeClassName = "active" to = "/Ciudades">Ciudades</NavLink> 
+            </li> 
         </ul>
             <hr / >
             <Switch>
@@ -31,6 +35,7 @@ const routing = (
                 <Route  path = "/users"component = { Users }/> 
                 <Route path = "/createAccount"component = { createAccount }/> 
                 <Route path="/users/:id" component={Users} />
+                <Route path="/Ciudades" component={Ciudades} />
                 <Route path = "/login"component = {login}></Route>
             
                 <Route component = { Notfound }/> 
