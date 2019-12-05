@@ -11,6 +11,14 @@ import header from "./componentes/header"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Ciudades from "./Ciudades";
+import { composeWithDevTools } from "redux-devtools-extension";
+import { createStore, applyMiddleware } from "redux";
+import { Provider } from "react-redux";
+import thunk from "redux-thunk";
+import rootReducer from "./store/reducers/rootReducer";
+
+
+
 const routing = ( 
 <Router>
     <div>
@@ -45,7 +53,11 @@ const routing = (
 </Router>
 )
 
-ReactDOM.render(routing, document.getElementById('root'))
+ReactDOM.render(<Provider store={store}>
+   {routing}
+  </Provider>, document.getElementById('root'))
+
+
 
 
 // If you want your app to work offline and load faster, you can change
