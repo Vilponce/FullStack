@@ -11,12 +11,12 @@ import header from "./componentes/header"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Ciudades from "./Ciudades";
-import { composeWithDevTools } from "redux-devtools-extension";
 import { createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
 import thunk from "redux-thunk";
 import rootReducer from "./store/reducers/rootReducer";
-
+import store from './store/store';
+import Ejemplo from './componentes/componente';
 
 
 const routing = ( 
@@ -45,18 +45,21 @@ const routing = (
                 <Route path="/users/:id" component={Users} />
                 <Route path="/Ciudades" component={Ciudades} />
                 <Route path = "/login"component = {login}></Route>
-            
+                <Route path="/Ejemplo" component={Ejemplo}/>
                 <Route component = { Notfound }/> 
-               
+                
             </Switch> 
         </div> 
 </Router>
 )
 
-ReactDOM.render(<Provider store={store}>
-   {routing}
-  </Provider>, document.getElementById('root'))
+ReactDOM.render(
+    <Provider store={store}>
+        {routing}
+    </Provider>
+    , document.getElementById('root'))
 
+    
 
 
 

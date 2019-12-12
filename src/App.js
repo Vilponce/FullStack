@@ -7,7 +7,7 @@ import Start from "./componentes/start"
 import CasitaHome from "./componentes/footer"
 import "./CSS/start.css";
 import "./CSS/footer.css";
-
+import {Link} from 'react-router-dom'
 
 
 function App() {
@@ -19,6 +19,8 @@ function App() {
         <Start></Start>
         <CasitaHome></CasitaHome>
 
+        <Link to="/Ejemplo">Ir a Ejemplo</Link>
+        
         {/* <p>
           Find your pecfect trip, designed by insiders who know and love their cities
         </p> */}
